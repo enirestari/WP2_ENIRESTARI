@@ -31,9 +31,7 @@ base_url('buku/ubahBuku/').$k['id'];?>" class="badge badge-info"><i
 class="fas fa-edit"></i> Ubah</a>
                                  <a href="<?=
 base_url('buku/hapusbuku/').$k['id'];?>" onclick="return
-confirm('Kamu yakin akan menghapus <?= $judul.' '.$k['kategori'];?>
-?');" class="badge badge-danger"><i class="fas fa-trash"></i>
-Hapus</a>
+confirm('Kamu yakin akan menghapus <?= $judul.' '.$k['kategori'];?>?');" class="badge badge-danger"><i class="fas fa-trash"></i>Hapus</a>
                             </td>
                         </tr>
                         <?php } ?>
@@ -75,7 +73,6 @@ $k[$i];?></option>
                 </select>
             </div>
         </div>
-        .
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary"
             data-dismiss="modal"><i class="fas fa-ban"></i> Close</button>

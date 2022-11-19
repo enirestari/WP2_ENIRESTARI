@@ -47,7 +47,6 @@ class Buku extends CI_Controller
             'required' => 'Nama ISBN harus diisi',
             'min_length' => 'Nama ISBN terlalu pendek',
             'numeric' => 'Yang anda masukan bukan angka'
-            118
         ]);
         $this->form_validation->set_rules('stok', 'Stok', 
         'required|numeric', [
@@ -86,7 +85,6 @@ class Buku extends CI_Controller
                 'tahun_terbit' => $this->input->post('tahun', true),
                 'isbn' => $this->input->post('isbn', true),
                 'stok' => $this->input->post('stok', true),
-                119
                 'dipinjam' => 0,
                 'dibooking' => 0,
                 'image' => $gambar

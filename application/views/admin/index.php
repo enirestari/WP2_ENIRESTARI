@@ -4,11 +4,11 @@
     <!-- row ux-->
     <div class="row">
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-danger shadow h-100 py-2 bgprimary">
+            <div class="card border-left-danger shadow h-100 py-2 bg-primary">
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-md font-weight-bold text-white textuppercase mb-1">Jumlah Anggota</div>
+                            <div class="text-md font-weight-bold text-white text-uppercase mb-1">Jumlah Anggota</div>
                             <div class="h1 mb-0 font-weight-bold text-white"><?=
 $this->ModelUser->getUserWhere(['role_id' => 1])->num_rows(); 
 ?></div>
@@ -22,11 +22,11 @@ class="fas fa-users fa-3x text-warning"></i></a>
                 </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-left-primary shadow h-100 py-2 bgwarning">
+                <div class="card border-left-primary shadow h-100 py-2 bg-warning">
                   <div class="card-body">
                      <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                          <div class="text-md font-weight-bold text-white textuppercase mb-1">Stok Buku Terdaftar</div>
+                          <div class="text-md font-weight-bold text-white text-uppercase mb-1">Stok Buku Terdaftar</div>
                           <div class="h1 mb-0 font-weight-bold text-white">
                             <?php
                             $where = ['stok != 0'];
@@ -36,7 +36,7 @@ class="fas fa-users fa-3x text-warning"></i></a>
                           </div>
                       </div>
                       <div class="col-auto">
-                        <a href="<?= base_url('buku'); ?>"><i class="fas fabook fa-3x text-primary"></i></a>
+                        <a href="<?= base_url('buku'); ?>"><i class="fas fa-book fa-3x text-primary"></i></a>
                       </div>
                     </div>
                 </div>
@@ -44,11 +44,11 @@ class="fas fa-users fa-3x text-warning"></i></a>
         </div>     
 
         <div class="col-xl-3 col-md-6 mb-4">
-         <div class="card border-left-success shadow h-100 py-2 bgdanger">
+         <div class="card border-left-success shadow h-100 py-2 bg-danger">
              <div class="card-body">
                  <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                       <div class="text-md font-weight-bold text-white textuppercase mb-1">Buku yang dipinjam</div>
+                       <div class="text-md font-weight-bold text-white text-uppercase mb-1">Buku yang dipinjam</div>
                            <div class="h1 mb-0 font-weight-bold text-white">
                             <?php
                             $where = ['dipinjam != 0'];
